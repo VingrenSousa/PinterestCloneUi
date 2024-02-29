@@ -22,6 +22,11 @@ export const styles = StyleSheet.create({
         flex:1,
         textAlign:'center'
 
+  },
+  Options:{
+    flexDirection:'row',
+    gap:16,
+    marginTop:32
   }
 });
 

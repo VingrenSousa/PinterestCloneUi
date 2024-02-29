@@ -1,9 +1,10 @@
 import { Filter } from "@/components/filter";
 import Filters from "@/components/filters";
+import Posts from "@/components/posts";
 import Themas from "@/style";
 import { FILTERS } from "@/ultils/filters";
 import { useState } from "react";
-
+import { POSTES } from "@/ultils/posts";
 import { StyleSheet, View,Text } from "react-native";
 
 export default function Home(){
@@ -11,6 +12,7 @@ export default function Home(){
     return(
         <View style={style.content}>
            <Filters filters={FILTERS} filter={filer} onChange={setFilter}/>
+           <Posts posts={POSTES}/>
         </View>
     )
 }

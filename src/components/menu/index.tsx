@@ -4,6 +4,7 @@ import { forwardRef } from "react"
 import BottomSheet from "@gorhom/bottom-sheet"
 import { menuProps } from "./meno"
 import { FontAwesome } from "@expo/vector-icons"
+import MenuButton from "../menubottom"
 
 export const Meno=forwardRef<BottomSheet,menuProps>(({onClose},ref)=>{
     return(
@@ -18,6 +19,11 @@ export const Meno=forwardRef<BottomSheet,menuProps>(({onClose},ref)=>{
                     <Text style={styles.text}>
                         Começe a criar agora
                     </Text>
+                </View>
+                <View style={styles.Options}>
+                    <MenuButton icon={"home"} title="pin"/>
+                    <MenuButton icon={"paste"} title="Colagem"/>
+                    <MenuButton icon={"folder"} title="Pasta"/>
                 </View>
             </View>
         </BottomSheet>
